@@ -60,9 +60,9 @@ public class BookController {
      * 删除 Book
      * 处理 "/book/{id}" 的 GET 请求，用来删除 Book 信息
      */
-    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
-    public Book deleteBook(@PathVariable Long id) {
+@RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+public Book deleteBook(@PathVariable Long id) {
         return bookService.delete(id);
-    }
+        }
 
-}
+        }
